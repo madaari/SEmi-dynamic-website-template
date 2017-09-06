@@ -2,7 +2,7 @@
 ## Desired Layout
   ![Initial layout](https://github.com/madaari/cedtnsit.in/blob/master/index.jpeg)
 ## Milestones
-  ### Front end
+  ### Front end<br>
   10/09/17 - Header<br>
   17/09/17 - Nav bar<br>
   20/09/17 - Bootstrap Carousal slider<br> 
