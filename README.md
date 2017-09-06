@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+# Home Page
+## Desired Layout
+  ![Initial layout](https://github.com/madaari/cedtnsit.in/blob/master/index.jpeg)
+## Milestones
+  ### Front end
+  10/09/17 - Header<br>
+  17/09/17 - Nav bar<br>
+  20/09/17 - Bootstrap Carousal slider<br> 
+  30/09/17 - Recent Events + About us<br>
+  06/10/17 - Project updates + Recent publications<br>
+  10/10/17 - Footer<br>
+  20/10/17 - Responsiveness testing<br>
+### Backend
+  30/10/17 - php + google sheet integration<br>
+  05/11/17 - Network traffic based interactive site loader<br>
+  
 
-You can use the [editor on GitHub](https://github.com/madaari/cedtnsit.in/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Current Issues
+None<br>
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/madaari/cedtnsit.in/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# Event page
+# Projects page
+# Out Team page
 
 ### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ Raise an issue for any suggestion/issue reporting
