@@ -102,7 +102,7 @@
 			</div>
 			<!-- Division 1.2 HEADER-->
 			<div id="div1-2" class="col-xs-9" style="text-align:center;">
-				<h1 style="position: relative ;margin-top: 1%;font-weight: bold;">Center of Electronic Design and Technology</h1>
+				<h1 style="position: relative ;margin-top: 1%;font-weight: bold;">Center of Embedded Design and Technology</h1>
 				<h2 style="position: relative ;margin-top: 1%;">Block 4, Netaji Subash Institute of Technology</h2>
 				<h2 style="position: relative ;margin-top: 1%;margin-bottom: 0.5%;">Dwarka, New Delhi</h2>
 			</div>
