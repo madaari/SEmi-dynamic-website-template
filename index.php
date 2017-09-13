@@ -112,6 +112,39 @@
           }
 
 	}
+    body { padding-top: 55px; }
+
+#myCarousel .carousel-caption {
+    left:0;
+    right:0;
+    bottom:0;
+    text-align:left;
+    padding:10px;
+    background:rgba(0,0,0,0.6);
+    text-shadow:none;
+}
+
+#myCarousel .list-group {
+    position:absolute;
+    top:0;
+    right:0;
+}
+#myCarousel .list-group-item {
+    border-radius:0px;
+    cursor:pointer;
+}
+#myCarousel .list-group .active {
+    background-color:#eee;  
+}
+
+@media (min-width: 992px) { 
+    #myCarousel {padding-right:33.3333%;}
+    #myCarousel .carousel-controls {display:none;}  
+}
+@media (max-width: 991px) { 
+    .carousel-caption p,
+    #myCarousel .list-group {display:none;} 
+}
 	</style>
 </head>
 <body style="background-color: ghostwhite;">
@@ -132,8 +165,7 @@
         </div>
       </div>
 </header>
-<hr>
-<hr>
+
 <!-- Division 1-->
 	<div class="container-fluid" style="background-color:#eceff1; margin-left: 0.5em;margin-right: 0.5em;height:11em;" >
 		<div class="row">
@@ -142,10 +174,10 @@
 					<img class="img-responsive" src="img/logo.png" alt="logo" height=100 width=120 style="position: relative;left:7%;margin-top:1em;">
 				<div id="div1-1_link" style="text-align: center;margin-top:2em;margin-left: 0.5em;">
 					<div>
-						<h5><a class="nav-link" href="http://sevasetu.org/contribute-now/" target="_blank">Contact us</a></h5>
+						<h5><a class="nav-link" href="#" target="_blank">Contact us</a></h5>
 					</div>
 					<div>
-						<h5><a class="nav-link" href="http://sevasetu.org/" target="_blank">About us</a></h5>
+						<h5><a class="nav-link" href="#" target="_blank">About us</a></h5>
 					</div>
 				</div>
 			</div>
@@ -157,13 +189,87 @@
 			</div>
 			<div id="div1-3" class="col-xs-1" >
 				<br>
-				<div><h4 class="centerify"><a class="nav-link" href="http://sevasetu.org/contribute-now/" target="_blank">Contact Us</a></h4></div>
-				<div><h4 class="centerify"><a class="nav-link" href="http://sevasetu.org/" target="_blank">About Us</a></h4></div>
+				<div><h4 class="centerify"><a class="nav-link" href="#" target="_blank">Contact Us</a></h4></div>
+				<div><h4 class="centerify"><a class="nav-link" href="#" target="_blank">About Us</a></h4></div>
 			</div>
 		</div>
-		<hr>
+		
     </div>
-        <!-- Nav bar-->
+    
+        <!-- Carosal-->
+        <div style="background-color: darkmagenta;padding-top: 1em;padding-bottom: 1em;margin-top: 1em;">
+            <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+          
+            <div class="item active">
+              <img src="http://placehold.it/760x400/cccccc/ffffff">
+               <div class="carousel-caption">
+                <h4><a href="#">Lorem ipsum dolor sit amet consetetur sadipscing</a></h4>
+                
+              </div>
+            </div><!-- End Item -->
+     
+             <div class="item">
+              <img src="http://placehold.it/760x400/999999/cccccc">
+               <div class="carousel-caption">
+                <h4><a href="#">consetetur sadipscing elitr, sed diam nonumy eirmod</a></h4>
+                
+              </div>
+            </div><!-- End Item -->
+            
+            <div class="item">
+              <img src="http://placehold.it/760x400/dddddd/333333">
+               <div class="carousel-caption">
+                <h4><a href="#">tempor invidunt ut labore et dolore</a></h4>
+                
+              </div>
+            </div><!-- End Item -->
+            
+            <div class="item">
+              <img src="http://placehold.it/760x400/999999/cccccc">
+               <div class="carousel-caption">
+                <h4><a href="#">magna aliquyam erat, sed diam voluptua</a></h4>
+                
+              </div>
+            </div><!-- End Item -->
+
+            <div class="item">
+              <img src="http://placehold.it/760x400/dddddd/333333">
+               <div class="carousel-caption">
+                <h4><a href="#">tempor invidunt ut labore et dolore magna aliquyam erat</a></h4>
+                
+              </div>
+            </div><!-- End Item -->
+                    
+          </div><!-- End Carousel Inner -->
+
+
+        <ul class="list-group col-sm-4" style="padding-left: 1em;">
+          <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active" style="background-color: silver;"><h4>Lorem ipsum dolor sit amet consetetur sadipscing</h4></li>
+          <li data-target="#myCarousel" data-slide-to="1" class="list-group-item" style="background-color: silver;"><h4>consetetur sadipscing elitr, sed diam nonumy eirmod</h4></li>
+          <li data-target="#myCarousel" data-slide-to="2" class="list-group-item" style="background-color: silver;"><h4>temporsssssssssss invdssssdddddidunt ut labore et dolore</h4></li>
+          <li data-target="#myCarousel" data-slide-to="3" class="list-group-item" style="background-color: silver;"><h4>magna aliqudddddddddyam erat, sed diam voluptua</h4></li>
+          <li data-target="#myCarousel" data-slide-to="4" class="list-group-item" style="background-color: silver;"><h4>tempor inviddddddddddunt ut labore et dolore magna aliquyam erat</h4></li>
+        
+        </ul>
+
+          <!-- Controls -->
+          <div class="carousel-controls">
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+          </div>
+
+        </div><!-- End Carousel -->
+    </div>
+</div>
+        <!-- Carosal End-->
 
 
 
@@ -201,7 +307,31 @@
                 $(sel).toggleClass('in');
                 $(sel2).toggleClass('out');
             });
+                var clickEvent = false;
+    $('#myCarousel').carousel({
+        interval:   4000    
+    }).on('click', '.list-group li', function() {
+            clickEvent = true;
+            $('.list-group li').removeClass('active');
+            $(this).addClass('active');     
+    }).on('slid.bs.carousel', function(e) {
+        if(!clickEvent) {
+            var count = $('.list-group').children().length -1;
+            var current = $('.list-group li.active');
+            current.removeClass('active').next().addClass('active');
+            var id = parseInt(current.data('slide-to'));
+            if(count == id) {
+                $('.list-group li').first().addClass('active'); 
+            }
+        }
+        clickEvent = false;
+    });
 	});
-
+$(window).load(function() {
+    var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+    var itemlength = $('#myCarousel .item').length;
+    var triggerheight = Math.round(boxheight/itemlength+1);
+    $('#myCarousel .list-group-item').outerHeight(triggerheight);
+});
 </script>
 </html>
