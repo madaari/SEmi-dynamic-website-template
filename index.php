@@ -39,7 +39,7 @@
 			}
 
 			h1{
-				font-size: 1.7em;
+				font-size: 1.6em;
 			}
 			h2{
 				font-size: 1.2em;
@@ -84,7 +84,7 @@
 			}
 
 			h1{
-				font-size: 2em;
+				font-size: 1.8em;
 			}
 			h2{
 				font-size: 1.5em;
@@ -142,8 +142,14 @@
     #myCarousel .carousel-controls {display:none;}  
 }
 @media (max-width: 991px) { 
+    h1{
+        font-size: 1.7em;
+      }
     .carousel-caption p,
     #myCarousel .list-group {display:none;} 
+}
+.hidden {
+  display: none;
 }
 	</style>
 </head>
@@ -197,7 +203,7 @@
     </div>
     
         <!-- Carosal-->
-        <div style="background-color: darkmagenta;padding-top: 1em;padding-bottom: 1em;margin-top: 1em;">
+        <div style="background-color: darkmagenta;padding-top: 1em;padding-bottom: 1em;margin-top: 0.5em;">
             <div class="container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
         
@@ -205,7 +211,7 @@
           <div class="carousel-inner">
           
             <div class="item active">
-              <img src="http://placehold.it/760x400/cccccc/ffffff">
+              <img src="http://via.placeholder.com/760x400/ffffff?text=Project%20images">
                <div class="carousel-caption">
                 <h4><a href="#">Lorem ipsum dolor sit amet consetetur sadipscing</a></h4>
                 
@@ -213,7 +219,7 @@
             </div><!-- End Item -->
      
              <div class="item">
-              <img src="http://placehold.it/760x400/999999/cccccc">
+              <img src="http://via.placeholder.com/760x400/ffffff?text=Project%20images">
                <div class="carousel-caption">
                 <h4><a href="#">consetetur sadipscing elitr, sed diam nonumy eirmod</a></h4>
                 
@@ -221,7 +227,7 @@
             </div><!-- End Item -->
             
             <div class="item">
-              <img src="http://placehold.it/760x400/dddddd/333333">
+              <img src="http://via.placeholder.com/760x400/ffffff?text=Project%20images">
                <div class="carousel-caption">
                 <h4><a href="#">tempor invidunt ut labore et dolore</a></h4>
                 
@@ -229,7 +235,7 @@
             </div><!-- End Item -->
             
             <div class="item">
-              <img src="http://placehold.it/760x400/999999/cccccc">
+              <img src="http://via.placeholder.com/760x400/ffffff?text=Project%20images">
                <div class="carousel-caption">
                 <h4><a href="#">magna aliquyam erat, sed diam voluptua</a></h4>
                 
@@ -237,7 +243,7 @@
             </div><!-- End Item -->
 
             <div class="item">
-              <img src="http://placehold.it/760x400/dddddd/333333">
+              <img src="http://via.placeholder.com/760x400/ffffff?text=Project%20images">
                <div class="carousel-caption">
                 <h4><a href="#">tempor invidunt ut labore et dolore magna aliquyam erat</a></h4>
                 
@@ -271,8 +277,24 @@
 </div>
         <!-- Carosal End-->
 
-
-
+<div class="container-fluid" style="background-color: ghostwhite;">
+    <div class="row">
+      <!-- Division 2-->
+      <div class="col-sm-7" style="background-color: black;color: ghostwhite;">
+        <h1  style="text-align: center;margin-top: 0.1em;padding-top: 0.5em;">Recent Events</h1>
+       <ul style="margin-bottom: 0em;">
+        <li class="hidden"><h2>A</h2></li>
+        <li class="hidden"><h2>A</h2></li>
+        <li class="hidden"><h2 style="margin-bottom:0.1em;padding-bottom:0.2em;">A</h2></li>
+      </ul>
+      </div>
+      <!-- Division 3-->
+      <div class="col-sm-5" style="background-color: #FFD96A;" >
+        <h1 style="text-align:center;margin-top: 0.1em;padding-top: 0.5em;">About Us</h1>
+        <img src="http://presentationspro.com/images/product/medium/slide/PPP_IFlat_LT3_Flat_Image_Placeholder_01_Circle.jpg" class="img-responsive" style="height: 50%;width: 60%;border-radius: 10em;display: inline-block;margin-left: 5em;margin-top: 2em;" alt="user-img">
+      </div>
+    </div>
+  </div>
    
 </body>
 <script>
@@ -326,6 +348,17 @@
         }
         clickEvent = false;
     });
+    $("ul li.hidden").each(function(i) {
+     $(this).delay(1000 * i).queue(function(nxt) {
+     $(this).removeClass('hidden');
+     nxt();
+  });
+     $(window).scroll(function (event) {
+    var scroll = $(window).scrollTop();
+    console.log(scroll);
+    // Do something
+      });
+});
 	});
 $(window).load(function() {
     var boxheight = $('#myCarousel .carousel-inner').innerHeight();
