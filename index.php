@@ -21,7 +21,24 @@
 		h5{
 			font-size: 1.2em;
 		}
-
+    .scrollToTop{
+  width:100px; 
+  height:130px;
+  padding:10px; 
+  text-align:center; 
+  background: whiteSmoke;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  position:fixed;
+  top:75px;
+  right:40px;
+  display:none;
+  background: url('arrow_up.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+  text-decoration:none;
+}
 		@media screen and (min-width:320px) and (max-width:700px) and (orientation:portrait) {
 		
 	  		body{font-size: 10px;}
@@ -164,7 +181,6 @@
             <ul class="nav navbar-nav">
               <li><a href="#Wiki">Wiki</a></li>
               <li><a href="#Team">Team</a></li>
-              <li><a href="#Projects">Projects</a></li>
               <li><a href="#Events">Events</a></li>
             </ul>
           </nav>
@@ -383,16 +399,17 @@
 
   </div>
 </div>
+<div>
+<a href="#" class="scrollToTop" style="display: none;height: ;height: 4em;padding: 0px;width: 6em;margin: 0px;"><img src="img/top.png" width=50% ></a>
+</div>
     <footer class="footer p-t-1">
         <div class="container">
                 <nav class="navbar" style="background:transparent; color: black;">
                       <div class="row">
-                        <div class="col-sm-8 h6"> <h1 style="color: whitesmoke;opacity: 0.6;margin-top: 0px;">CEDT</h1> </div>
-                      <div class="col-sm-2 "> <a class="nav-item nav-link" href="http://sevasetu.org/" target="_blank"><h4 style="color: ghostwhite;"><u>About Us</u></h4></a></div>
-                      <div class="col-sm-2 "> <a class="nav-item nav-link" href="http://sevasetu.org/"><h4 style="color: ghostwhite;"><u>Join Us</u></h4></a></div>
-
+                        <div class="col-xs-8 h6"> <h1 style="color: whitesmoke;opacity: 0.6;margin-top: 0px;">CEDT</h1> </div>
+                        <div class="col-xs-4"><h2 style="color: whitesmoke;opacity:0.6;margin-top:10px">© 2017 cedtnsit.in</h2></div>
                       </div>
-                      <h6 style="color: silver;margin: 0px;">© 2017 cedtnsit.in</h6>
+                      
                 </nav>
         </div>
     </footer>
@@ -458,6 +475,19 @@
     console.log(scroll);
     // Do something
       });
+     $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+      $('.scrollToTop').fadeIn();
+    } else {
+      $('.scrollToTop').fadeOut();
+    }
+  });
+  
+  //Click event to scroll to top
+  $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
 });
 	});
 $(window).load(function() {
