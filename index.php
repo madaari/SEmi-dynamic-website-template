@@ -143,7 +143,7 @@
 }
 @media (max-width: 991px) { 
     h1{
-        font-size: 1.7em;
+        font-size: 1.55em;
       }
     .carousel-caption p,
     #myCarousel .list-group {display:none;} 
@@ -213,7 +213,7 @@
             <div class="item active">
               <img src="http://via.placeholder.com/760x400/ffffff?text=Project%20images">
                <div class="carousel-caption">
-                <h4><a href="#">Lorem ipsum dolor sit amet consetetur sadipscing</a></h4>
+                <h4><a href="#">Lorem ipsum dolor sit amet consetetur sadipscing  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur </a></h4>
                 
               </div>
             </div><!-- End Item -->
@@ -254,7 +254,7 @@
 
 
         <ul class="list-group col-sm-4" style="padding-left: 1em;">
-          <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active" style="background-color: silver;"><h4>Lorem ipsum dolor sit amet consetetur sadipscing</h4></li>
+          <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active" style="background-color: silver;"><h4>Lorem ipsum dolor sit amet consetetur sadipscing  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur </h4></li>
           <li data-target="#myCarousel" data-slide-to="1" class="list-group-item" style="background-color: silver;"><h4>consetetur sadipscing elitr, sed diam nonumy eirmod</h4></li>
           <li data-target="#myCarousel" data-slide-to="2" class="list-group-item" style="background-color: silver;"><h4>temporsssssssssss invdssssdddddidunt ut labore et dolore</h4></li>
           <li data-target="#myCarousel" data-slide-to="3" class="list-group-item" style="background-color: silver;"><h4>magna aliqudddddddddyam erat, sed diam voluptua</h4></li>
@@ -280,22 +280,118 @@
 <div class="container-fluid" style="background-color: ghostwhite;">
     <div class="row">
       <!-- Division 2-->
-      <div class="col-sm-7" style="background-color: black;color: ghostwhite;">
+      <div class="col-sm-12" style="background-color: black;color: ghostwhite;">
         <h1  style="text-align: center;margin-top: 0.1em;padding-top: 0.5em;">Recent Events</h1>
-       <ul style="margin-bottom: 0em;">
-        <li class="hidden"><h2>A</h2></li>
-        <li class="hidden"><h2>A</h2></li>
-        <li class="hidden"><h2 style="margin-bottom:0.1em;padding-bottom:0.2em;">A</h2></li>
+        <br>
+        <br>
+       <ul style="margin-bottom: 0em;padding-left: 1.5em;">
+
+        <li class="hidden" style="list-style-type: none;">
+           <div class="row">
+
+            <div class="col-sm-8" >
+                         <h2>Event title 1</h2>
+                         <h4>Date</h4>
+                         <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate <a href="#">Read More </a></h4>
+            </div>
+            <div class="col-sm-4" >
+                         <img src="http://via.placeholder.com/150X150" class="img-circle" alt="Cinque Terre" width="170" height="170" style="margin-left: 10%;"> 
+            </div>
+          </div>
+          <hr style="border-style: dashed;">
+        </li>
+
+         <li class="hidden" style="list-style-type: none;">
+           <div class="row">
+            <div class="col-sm-8" >
+                         <h2>Event title 2</h2>
+                         <h4>Date</h4>
+                         <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate <a href="#">Read More </a></h4>
+            </div>
+            <div class="col-sm-4" >
+                         <img src="http://via.placeholder.com/150X150" class="img-circle" alt="Cinque Terre" width="170" height="170" style="margin-left: 10%;"> 
+            </div>
+          </div>
+          <hr style="border-style: dashed;">
+        </li>
+
+         <li class="hidden" style="list-style-type: none;margin-bottom:0.1em;padding-bottom:0.2em;">
+           <div class="row">
+            <div class="col-sm-8" >
+                         <h2>Event title 3</h2>
+                         <h4>Date</h4>
+                         <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate <a href="#">Read More </a></h4>
+            </div>
+            <div class="col-sm-4" >
+                         <img src="http://via.placeholder.com/150X150" class="img-circle" alt="Cinque Terre" width="170" height="170" style="margin-left: 10%;"> 
+            </div>
+          </div>
+          <hr style="border-style: dashed;">
+        </li>   
       </ul>
-      </div>
-      <!-- Division 3-->
-      <div class="col-sm-5" style="background-color: #FFD96A;" >
-        <h1 style="text-align:center;margin-top: 0.1em;padding-top: 0.5em;">About Us</h1>
-        <img src="http://presentationspro.com/images/product/medium/slide/PPP_IFlat_LT3_Flat_Image_Placeholder_01_Circle.jpg" class="img-responsive" style="height: 50%;width: 60%;border-radius: 10em;display: inline-block;margin-left: 5em;margin-top: 2em;" alt="user-img">
       </div>
     </div>
   </div>
-   
+    <!-- Division 3-->
+    <div class="container-fluid" style="background-color: #FFD96A;">
+     <div class="row">
+      
+      <div class="col-sm-12"  >
+        <h1 style="text-align:center;margin-top: 0.1em;padding-top: 0.5em;">About Us</h1>
+    
+      </div>
+    </div>
+   <div class="row">
+      <div class="col-sm-8" >
+             <h1>Prof. Dhananjay Gadre</h1>
+             <h2>Director,CEDT</h2>
+             <div class="row">
+                <div class="col-sm-12" style="padding-left: 20%;">
+                    <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate .Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputatessss <a href="#">Read More </a></h4>
+                </div>
+             </div>
+      </div>
+      <div class="col-sm-4" >
+             <img src="http://via.placeholder.com/250X250" class="img-circle" alt="Cinque Terre" width="250" height="250" style="margin-left: 10%;"> 
+      </div>
+  </div>
+  <div class="centerify" style="color: green;font-size: 4em;font-family: 'Vollkorn', serif;text-align: center;">~~~</div>
+
+
+    <div class="row">
+
+      <div class="col-sm-4 border" style="text-align: center;padding: 1em;">
+        <a href="http://epaper.prabhatkhabar.com/c/18623553" target="_blank"><img src="http://via.placeholder.com/100X100" style="height: 7em;"></a>
+        <h4 style="color: #00695c;">Our effort gets covered by <br> leading daily</h4>
+      </div>
+
+      <div class="col-sm-4 border" style="text-align: center;padding: 1em;">
+        <a href="https://www.ketto.org/sevasetu-citizen-care" target="_blank"><img src="http://via.placeholder.com/100X100" style="height: 7em;"></a>
+        <h4 style="color: #00695c;">Our effort gets covered by <br> leading daily</h4>
+      </div>
+
+      <div class="col-sm-4" style="text-align: center;padding: 1em;">
+        <a href="http://sevasetu.org/category/citizen-care/" target="_blank"><img src="http://via.placeholder.com/100X100" style="height: 7em;"></a>
+        <h4 style="color: #00695c;">Our effort gets covered by <br> leading daily</h4>
+      </div>
+      
+    </div>
+    
+
+  </div>
+    <footer class="footer p-t-1">
+        <div class="container">
+                <nav class="navbar" style="background:transparent; color: black;">
+                      <div class="row">
+                        <div class="col-sm-8 h6"> <h1 style="color: whitesmoke;opacity: 0.6;margin-top: 0px;">CEDT</h1> </div>
+                      <div class="col-sm-2 "> <a class="nav-item nav-link" href="http://sevasetu.org/" target="_blank"><h4 style="color: ghostwhite;"><u>About Us</u></h4></a></div>
+                      <div class="col-sm-2 "> <a class="nav-item nav-link" href="http://sevasetu.org/"><h4 style="color: ghostwhite;"><u>Join Us</u></h4></a></div>
+
+                      </div>
+                      <h6 style="color: silver;margin: 0px;">© 2017 cedtnsit.in</h6>
+                </nav>
+        </div>
+    </footer>
 </body>
 <script>
 
