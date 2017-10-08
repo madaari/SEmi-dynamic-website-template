@@ -179,15 +179,17 @@
         <div class="navbar-inverse side-collapse in">
           <nav role="navigation" class="navbar-collapse">
             <ul class="nav navbar-nav">
+               <li><a href="#Wiki">Home</a></li>
               <li><a href="#Wiki">Wiki</a></li>
-              <li><a href="#Team">Team</a></li>
               <li><a href="#Events">Events</a></li>
+              <li><a href="#Events">Our Team</a></li>
             </ul>
           </nav>
         </div>
       </div>
 </header>
 
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////Main page start ///////////////////////////////////////////////////-->
 <!-- Division 1-->
 <div style="background-image: url('img/stars.jpg');">
 	<div class="container-fluid" style="background-color:#eceff1; margin-left: 0.5em;margin-right: 0.5em;height:11em;opacity:0.9;" >
@@ -197,7 +199,7 @@
 					<img class="img-responsive" src="img/logo.png" alt="logo" height=100 width=120 style="position: relative;left:7%;margin-top:1em;">
 				<div id="div1-1_link" style="text-align: center;margin-top:2em;margin-left: 0.5em;">
 					<div>
-						<h5><a class="nav-link" href="#" target="_blank">Contact us</a></h5>
+						<h5><a class="nav-link" href="contactus.php" target="_blank">Contact us</a></h5>
 					</div>
 					<div>
 						<h5><a class="nav-link" href="#" target="_blank">About us</a></h5>
@@ -212,7 +214,7 @@
 			</div>
 			<div id="div1-3" class="col-xs-1" >
 				<br>
-				<div><h4 class="centerify"><a class="nav-link" href="#" target="_blank">Contact Us</a></h4></div>
+				<div><h4 class="centerify"><a class="nav-link" href="contactus.php" target="_blank">Contact Us</a></h4></div>
 				<div><h4 class="centerify"><a class="nav-link" href="#" target="_blank">About Us</a></h4></div>
 			</div>
 		</div>
@@ -292,6 +294,7 @@
 
         </div><!-- End Carousel -->
     </div>
+
 </div>
         <!-- Carosal End-->
 
@@ -347,6 +350,7 @@
           <hr style="border-style: dashed;">
         </li>   
       </ul>
+      <a href="#" style="text-align: end;"><h2>View all...</h2></a>
       </div>
     </div>
   </div>
@@ -366,7 +370,7 @@
              <h2>Director,CEDT</h2>
              <div class="row">
                 <div class="col-sm-12" style="padding-left: 20%;">
-                    <h4>Dhananjay V. Gadre (New Delhi, India) completed his MSc (electronic science) from the University of Delhi and M.Engr (computer engineering) from the University of Idaho, USA. In his professional career of 25 years, he has taught at the SGTB Khalsa College, University of Delhi, worked as a scientific officer at the Inter University Centre for Astronomy and Astrophysics (IUCAA), Pune, and since 2001, has been with the Electronics and Communication Engineering Division, Netaji Subhas Institute of Technology, New Delhi, currently as an associate professor. He is also associated with the global Fablab network and is a faculty at the Fab Academy. Professor Gadre is the author of several professional articles and five books. One of his books has been translated into Chinese and another one into Greek.  <a href="#">Read More </a></h4>
+                    <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,   <a href="#">Read More </a></h4>
                 </div>
              </div>
       </div>
@@ -381,24 +385,25 @@
 
       <div class="col-sm-4 border" style="text-align: center;padding: 1em;">
         <a href="http://epaper.prabhatkhabar.com/c/18623553" target="_blank"><img src="http://via.placeholder.com/100X100" style="height: 7em;"></a>
-        <h4 style="color: #00695c;">Our effort gets covered by <br> leading daily</h4>
+        <h4 style="color: #00695c;">Name 1 <br> Designation</h4>
       </div>
 
       <div class="col-sm-4 border" style="text-align: center;padding: 1em;">
         <a href="https://www.ketto.org/sevasetu-citizen-care" target="_blank"><img src="http://via.placeholder.com/100X100" style="height: 7em;"></a>
-        <h4 style="color: #00695c;">Our effort gets covered by <br> leading daily</h4>
+        <h4 style="color: #00695c;">Name 2 <br> Designation</h4>
       </div>
 
       <div class="col-sm-4" style="text-align: center;padding: 1em;">
         <a href="http://sevasetu.org/category/citizen-care/" target="_blank"><img src="http://via.placeholder.com/100X100" style="height: 7em;"></a>
-        <h4 style="color: #00695c;">Our effort gets covered by <br> leading daily</h4>
+        <h4 style="color: #00695c;">Name 3 <br> Designation</h4>
       </div>
       
     </div>
     
-
+    <a href="#" style="text-align: end;"><h2>Our Team...</h2></a>
   </div>
 </div>
+  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////Main page end ///////////////////////////////////////////////////-->
 <div>
 <a href="#" class="scrollToTop" style="display: none;height: ;height: 4em;padding: 0px;width: 6em;margin: 0px;"><img src="img/top.png" width=50% ></a>
 </div>
@@ -466,7 +471,7 @@
         clickEvent = false;
     });
     $("ul li.hidden").each(function(i) {
-     $(this).delay(1000 * i).queue(function(nxt) {
+     $(this).delay(1500 * i).queue(function(nxt) {
      $(this).removeClass('hidden');
      nxt();
   });
