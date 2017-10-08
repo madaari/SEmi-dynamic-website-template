@@ -173,7 +173,8 @@
 </header>
 
 <!-- Division 1-->
-	<div class="container-fluid" style="background-color:#eceff1; margin-left: 0.5em;margin-right: 0.5em;height:11em;" >
+<div style="background-image: url('img/stars.jpg');">
+	<div class="container-fluid" style="background-color:#eceff1; margin-left: 0.5em;margin-right: 0.5em;height:11em;opacity:0.9;" >
 		<div class="row">
 			<!-- Division 1.1 LOGO-->
 			<div id="div1-1" class="col-xs-1" style="padding: 0px;margin-right: 1em;">
@@ -201,10 +202,11 @@
 		</div>
 		
     </div>
+  </div>
     
         <!-- Carosal-->
-        <div style="background-color: darkmagenta;padding-top: 1em;padding-bottom: 1em;margin-top: 0.5em;">
-            <div class="container">
+        <div style="background-color: darkmagenta;padding-top: 1em;padding-bottom: 1em;margin-top: 0.5em;background-image: url('img/elec2.jpg');">
+            <div class="container" style="opacity: 0.85;">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
         
           <!-- Wrapper for slides -->
@@ -277,10 +279,10 @@
 </div>
         <!-- Carosal End-->
 
-<div class="container-fluid" style="background-color: ghostwhite;">
+<div class="container-fluid" style="background-color: ghostwhite;background-image: url('img/elec1.jpg');">
     <div class="row">
       <!-- Division 2-->
-      <div class="col-sm-12" style="background-color: black;color: ghostwhite;">
+      <div class="col-sm-12" style="background-color: black;color: ghostwhite;opacity: 0.9;">
         <h1  style="text-align: center;margin-top: 0.1em;padding-top: 0.5em;">Recent Events</h1>
         <br>
         <br>
@@ -295,7 +297,7 @@
                          <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate <a href="#">Read More </a></h4>
             </div>
             <div class="col-sm-4" >
-                         <img src="http://via.placeholder.com/150X150" class="img-circle" alt="Cinque Terre" width="170" height="170" style="margin-left: 10%;"> 
+                         <img src="http://via.placeholder.com/150X150" class="img-circle" alt="Cinque Terre" width="170" height="170" style="margin-left: 18%;"> 
             </div>
           </div>
           <hr style="border-style: dashed;">
@@ -309,7 +311,7 @@
                          <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate <a href="#">Read More </a></h4>
             </div>
             <div class="col-sm-4" >
-                         <img src="http://via.placeholder.com/150X150" class="img-circle" alt="Cinque Terre" width="170" height="170" style="margin-left: 10%;"> 
+                         <img src="http://via.placeholder.com/150X150" class="img-circle" alt="Cinque Terre" width="200" height="200" style="margin-left: 14%;"> 
             </div>
           </div>
           <hr style="border-style: dashed;">
@@ -323,7 +325,7 @@
                          <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate <a href="#">Read More </a></h4>
             </div>
             <div class="col-sm-4" >
-                         <img src="http://via.placeholder.com/150X150" class="img-circle" alt="Cinque Terre" width="170" height="170" style="margin-left: 10%;"> 
+                         <img src="http://via.placeholder.com/150X150" class="img-circle" alt="Cinque Terre" width="220" height="220" style="margin-left: 12%;"> 
             </div>
           </div>
           <hr style="border-style: dashed;">
@@ -333,7 +335,8 @@
     </div>
   </div>
     <!-- Division 3-->
-    <div class="container-fluid" style="background-color: #FFD96A;">
+    <div style="background-image: url('img/elec3.png');">
+    <div class="container-fluid" style="background-color: #FFD96A; opacity:0.9;">
      <div class="row">
       
       <div class="col-sm-12"  >
@@ -347,7 +350,7 @@
              <h2>Director,CEDT</h2>
              <div class="row">
                 <div class="col-sm-12" style="padding-left: 20%;">
-                    <h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate .Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputatessss <a href="#">Read More </a></h4>
+                    <h4>Dhananjay V. Gadre (New Delhi, India) completed his MSc (electronic science) from the University of Delhi and M.Engr (computer engineering) from the University of Idaho, USA. In his professional career of 25 years, he has taught at the SGTB Khalsa College, University of Delhi, worked as a scientific officer at the Inter University Centre for Astronomy and Astrophysics (IUCAA), Pune, and since 2001, has been with the Electronics and Communication Engineering Division, Netaji Subhas Institute of Technology, New Delhi, currently as an associate professor. He is also associated with the global Fablab network and is a faculty at the Fab Academy. Professor Gadre is the author of several professional articles and five books. One of his books has been translated into Chinese and another one into Greek.  <a href="#">Read More </a></h4>
                 </div>
              </div>
       </div>
@@ -379,6 +382,7 @@
     
 
   </div>
+</div>
     <footer class="footer p-t-1">
         <div class="container">
                 <nav class="navbar" style="background:transparent; color: black;">
