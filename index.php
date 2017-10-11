@@ -208,7 +208,7 @@
 			</div>
 			<!-- Division 1.2 HEADER-->
 			<div id="div1-2" class="col-xs-9" style="text-align:center;">
-				<h1 style="position: relative ;margin-top: 1%;font-weight: bold;">Center of Embedded Design and Technology</h1>
+				<h1 style="position: relative ;margin-top: 1%;font-weight: bold;">Centre for Electronic Design and Technology</h1>
 				<h2 style="position: relative ;margin-top: 1%;">Block 4, Netaji Subash Institute of Technology</h2>
 				<h2 style="position: relative ;margin-top: 1%;margin-bottom: 0.5%;">Dwarka, New Delhi</h2>
 			</div>
@@ -384,18 +384,18 @@
     <div class="row">
 
       <div class="col-sm-4 border" style="text-align: center;padding: 1em;">
-        <a href="http://epaper.prabhatkhabar.com/c/18623553" target="_blank"><img src="http://via.placeholder.com/100X100" style="height: 7em;"></a>
-        <h4 style="color: #00695c;">Name 1 <br> Designation</h4>
+        <a href="#" target="_blank"><img src="http://via.placeholder.com/100X100" style="height: 7em;"></a>
+        <h4 style="color: #00695c;">Name 1 <br> Designation<br>Work discription</h4>
       </div>
 
       <div class="col-sm-4 border" style="text-align: center;padding: 1em;">
-        <a href="https://www.ketto.org/sevasetu-citizen-care" target="_blank"><img src="http://via.placeholder.com/100X100" style="height: 7em;"></a>
-        <h4 style="color: #00695c;">Name 2 <br> Designation</h4>
+        <a href="#" target="_blank"><img src="http://via.placeholder.com/100X100" style="height: 7em;"></a>
+        <h4 style="color: #00695c;">Name 2 <br> Designation<br>Work discription</h4>
       </div>
 
       <div class="col-sm-4" style="text-align: center;padding: 1em;">
-        <a href="http://sevasetu.org/category/citizen-care/" target="_blank"><img src="http://via.placeholder.com/100X100" style="height: 7em;"></a>
-        <h4 style="color: #00695c;">Name 3 <br> Designation</h4>
+        <a href="#" target="_blank"><img src="http://via.placeholder.com/100X100" style="height: 7em;"></a>
+        <h4 style="color: #00695c;">Name 3 <br> Designation<br>Work discription</h4>
       </div>
       
     </div>
