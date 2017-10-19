@@ -1,3 +1,41 @@
+
+<?php
+  $url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQWvKmJQrt3-DpE5-8b8zu9rXe4DF7DpTq8JMUYQAukLDR_hwAKGpJK9sUMB62CvXXk7N4hIc9MJGya/pub?gid=0&single=true&output=csv";
+  
+  $data = get_csv_content($url);
+  
+  $is_valid = validate_data($data);
+  
+  $data_to_publish = array(0, 0, 0, 0,0,0);
+  
+  if($is_valid){
+ 
+  }
+  
+  function get_csv_content($spreadsheet_url){
+    if(!ini_set('default_socket_timeout', 15)) 
+    echo "<!-- unable to change socket timeout -->";
+    if (($handle = fopen($spreadsheet_url, "r")) !== FALSE) {
+      while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+        $spreadsheet_data[] = $data;
+      }
+      fclose($handle);
+      return $spreadsheet_data;
+    }
+  }
+  
+  function validate_data($data){
+    return true;
+  }
+
+  function remove_html_tags($data_to_publish){
+    $data_to_publish[0]=(int)strip_tags($data_to_publish[0]);
+    $data_to_publish[1]=(int)strip_tags($data_to_publish[1]);
+    $data_to_publish[2]=(int)strip_tags($data_to_publish[2]);
+    $data_to_publish[3]=(int)strip_tags($data_to_publish[3]);
+    return true;
+  }
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +46,7 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta content="utf-8" http-equiv="encoding">
 	<title>
 		CEDT 
 	</title>
@@ -231,49 +270,49 @@
           <div class="carousel-inner">
           
             <div class="item active">
-              <img src="https://hackster.imgix.net/uploads/attachments/361400/p1020495_edited_bKZizy24D0.JPG?auto=compress%2Cformat&w=760&h=400&fit=min" height=400 width=760>
+              <img src="<?php echo $data[5][3];?>" height=400 width=760>
                <div class="carousel-caption">
-                <h4><a href="#" style="color: rgb(255,255,255)"><strong>Raspberry Pi Thermal Camera:</strong><br>A portable, battery-powered thermal camera using a Raspberry Pi and an AMG8833 thermal camera sensor. </a></h4>
+                <h4><a href="#" style="color: rgb(255,255,255)"><strong><?php echo $data[5][1]; ?></strong><br><?php echo $data[5][2]; ?> </a></h4>
                 
               </div>
             </div><!-- End Item -->
      
              <div class="item">
-              <img src="https://hackster.imgix.net/uploads/attachments/356077/pedal-pi-image_hOV1czsX8m.jpg?auto=compress%2Cformat&w=760&h=400&fit=min">
+              <img src="<?php echo $data[6][3];?>">
                <div class="carousel-caption">
-                <h4><a href="#" style="color: rgb(255,255,255)"><strong>Pedal-Pi: Programmable Guitar Pedal</strong><br>This programmable guitar pedal works with the Raspberry Pi ZERO board and it is made to experiment with sounds and learn about digital audio</a></h4>
+                <h4><a href="#" style="color: rgb(255,255,255)"><strong><?php echo $data[6][1]; ?></strong><br><?php echo $data[6][2]; ?></a></h4>
                 
               </div>
             </div><!-- End Item -->
             
             <div class="item">
-              <img src="https://hackster.imgix.net/uploads/attachments/353780/image1_x9K9v9VM3t.png?auto=compress%2Cformat&w=760&h=400&fit=min">
+              <img src="<?php echo $data[7][3];?>">
                <div class="carousel-caption">
-                <h4><a href="#" style="color: rgb(255,255,255)"><strong>Getting Started in Android Things with Raspberry Pi</strong><br>Let's get started in Android Things with Raspberry Pi by blinking.</a></h4>
+                <h4><a href="#" style="color: rgb(255,255,255)"><strong><?php echo $data[7][1]; ?></strong><br><?php echo $data[7][2]; ?></a></h4>
                 
               </div>
             </div><!-- End Item -->
             
             <div class="item">
-              <img src="https://hackster.imgix.net/uploads/attachments/363094/store-40-novastarter-detail-1_erL4lcuq2v.jpg?auto=compress%2Cformat&w=760&h=400&fit=min">
+              <img src="<?php echo $data[8][3];?>">
                <div class="carousel-caption">
-                <h4><a href="#" style="color: rgb(255,255,255)"><strong>Hologram Nova Starter Kit</strong><br></a></h4>
+                <h4><a href="#" style="color: rgb(255,255,255)"><strong><?php echo $data[8][1]; ?></strong><br><?php echo $data[8][2]; ?></a></h4>
                 
               </div>
             </div><!-- End Item -->
 
             <div class="item">
-              <img src="https://hackster.imgix.net/uploads/attachments/358799/img_4798_qw9Y0BQOzi.JPG?auto=compress%2Cformat&w=760&h=400&fit=min">
+              <img src="<?php echo $data[9][3];?>">
                <div class="carousel-caption">
-                <h4><a href="#" style="color: rgb(255,255,255)"><strong>Add Cellular to a Raspberry Pi with Hologram Nova</strong><br>Connect your Raspberry Pi to the world through cellular with the Hologram Nova.</a></h4>
+                <h4><a href="#" style="color: rgb(255,255,255)"><strong><?php echo $data[9][1]; ?></strong><br><?php echo $data[9][2]; ?></a></h4>
                 
               </div>
             </div><!-- End Item -->
 
               <div class="item">
-              <img src="https://hackster.imgix.net/uploads/attachments/354170/dsc_7772_4u9wDCBRNl.JPG?auto=compress%2Cformat&w=760&h=400&fit=min">
+              <img src="<?php echo $data[10][3];?>">
                <div class="carousel-caption">
-                <h4><a href="#" style="color: rgb(255,255,255)"><strong>Laser Pointer Panther Tank</strong><br>Build a robotic Panther tank that can use a laser pointer to play with a cat! It also uses a custom controller with Bluetooth.</a></h4>
+                <h4><a href="#" style="color: rgb(255,255,255)"><strong><?php echo $data[10][1]; ?></strong><br><?php echo $data[10][2]; ?></a></h4>
                 
               </div>
             </div><!-- End Item -->
@@ -282,12 +321,12 @@
 
 
         <ul class="list-group col-sm-4" style="padding-left: 1em;">
-          <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active" style="background-color: silver;"><h4><strong>Raspberry Pi Thermal Camera:</strong></h4></li>
-          <li data-target="#myCarousel" data-slide-to="1" class="list-group-item" style="background-color: silver;"><h4><strong>Pedal-Pi: Programmable Guitar Pedal</strong></h4></li>
-          <li data-target="#myCarousel" data-slide-to="2" class="list-group-item" style="background-color: silver;"><h4><strong>Getting Started in Android Things with Raspberry Pi</strong></h4></li>
-          <li data-target="#myCarousel" data-slide-to="3" class="list-group-item" style="background-color: silver;"><h4><strong>Hologram Nova Starter Kit</strong></h4></li>
-          <li data-target="#myCarousel" data-slide-to="4" class="list-group-item" style="background-color: silver;"><h4><strong>Add Cellular to a Raspberry Pi with Hologram Nova</strong></h4></li>
-          <li data-target="#myCarousel" data-slide-to="4" class="list-group-item" style="background-color: silver;"><h4><strong>Laser Pointer Panther Tank</strong></h4></li>
+          <li data-target="#myCarousel" data-slide-to="0" class="list-group-item active" style="background-color: silver;"><h4><strong><?php echo $data[5][1]; ?></strong></h4></li>
+          <li data-target="#myCarousel" data-slide-to="1" class="list-group-item" style="background-color: silver;"><h4><strong><?php echo $data[6][1]; ?></strong></h4></li>
+          <li data-target="#myCarousel" data-slide-to="2" class="list-group-item" style="background-color: silver;"><h4><strong><?php echo $data[7][1]; ?></strong></h4></li>
+          <li data-target="#myCarousel" data-slide-to="3" class="list-group-item" style="background-color: silver;"><h4><strong><?php echo $data[8][1]; ?></strong></h4></li>
+          <li data-target="#myCarousel" data-slide-to="4" class="list-group-item" style="background-color: silver;"><h4><strong><?php echo $data[9][1]; ?></strong></h4></li>
+          <li data-target="#myCarousel" data-slide-to="4" class="list-group-item" style="background-color: silver;"><h4><strong><?php echo $data[10][1]; ?></strong></h4></li>
         
         </ul>
 
@@ -320,14 +359,12 @@
            <div class="row">
 
             <div class="col-sm-8" >
-                         <h2>Earth Day: Planet Pulse</h2>
-                         <h4>October 29, 2016</h4>
-                         <h4>This is the planet we live on and it supports more than six billion humans and countless animals and plants. With climate change and pollution threatening our living environment, more people than ever are coming together to help and protect our only home.
-With low-cost advanced technologies available for us today, there has never been a better time to show support for environmental protection.
-Intel and Hackster have joined hands to lead this important challenge on Earth Day 2017, with an aim to encourage people to invent things that will benefit the planet, with focus on all university students worldwide!  <a href="#">Read More </a></h4>
+                         <h2><?php echo $data[1][1];?></h2>
+                         <h4><?php echo $data[1][2];?></h4>
+                         <h4><?php echo $data[1][4];?></h4>
             </div>
             <div class="col-sm-4" >
-                         <img src="https://hackster.imgix.net/uploads/attachments/292945/earth-vitals-animated_3szapwBUG7.gif?auto=compress%2Cformat&w=150&h=150&fit=max" class="img-circle" alt="Cinque Terre" width="170" height="170" style="margin-left: 18%;"> 
+                         <img src="<?php echo $data[1][3];?>" class="img-circle" alt="Cinque Terre" width="170" height="170" style="margin-left: 18%;"> 
             </div>
           </div>
           <hr style="border-style: dashed;">
@@ -336,12 +373,12 @@ Intel and Hackster have joined hands to lead this important challenge on Earth D
          <li class="hidden" style="list-style-type: none;">
            <div class="row">
             <div class="col-sm-8" >
-                         <h2>Sensing a Smarter, Safer and Greener Life</h2>
-                         <h4>Dec 26, 2016</h4>
-                         <h4>This new Infineon contest calls on enterprise and professional developers to join us and build industrial applications using one of two very powerful products. Infineon’s DPS310 is a miniaturized digital barometric pressure sensor that offers high accuracy, low current consumption, and Infineon's BGT24LTR11N16 24GHz Radar with smart motion tracking, direction, proximity, speed detection and more. <a href="#">Read More </a></h4>
+                         <h2><?php echo $data[2][1];?></h2>
+                         <h4><?php echo $data[2][2];?></h4>
+                         <h4><?php echo $data[2][4];?></h4>
             </div>
             <div class="col-sm-4" >
-                         <img src="https://hackster.imgix.net/uploads/attachments/300521/infineon-logo_svg_wUTo0SKwFQ.png?auto=compress%2Cformat&w=680&h=510&fit=max" class="img-circle" alt="Cinque Terre" width="200" height="200" style="margin-left: 14%;"> 
+                         <img src="<?php echo $data[2][3];?>" class="img-circle" alt="Cinque Terre" width="200" height="200" style="margin-left: 14%;"> 
             </div>
           </div>
           <hr style="border-style: dashed;">
@@ -350,24 +387,12 @@ Intel and Hackster have joined hands to lead this important challenge on Earth D
          <li class="hidden" style="list-style-type: none;margin-bottom:0.1em;padding-bottom:0.2em;">
            <div class="row">
             <div class="col-sm-8" >
-                         <h2>China-U.S. Young Maker Competition! </h2>
-                         <h4>April 18, 2016</h4>
-                         <h4>We're calling upon all U.S-based Makers who have the ideas and skills that can change the world. Join our challenge and build innovative projects that solve real problems, while competing against other tinkerers from China on a quest to become the ultimate global Maker.<br>
-
-Use Intel hardware and submit projects that have impact in these areas:<br>
-
-    Community Development <br>
-
-    Education <br>
-
-    Energy <br>
-
-    Environmental Protection<br>
-
- <a href="#">Read More </a></h4>
+                         <h2><?php echo $data[3][1];?></h2>
+                         <h4><?php echo $data[3][2];?></h4>
+                         <h4><?php echo $data[3][4];?></h4>
             </div>
             <div class="col-sm-4" >
-                         <img src="https://hackster.imgix.net/uploads/attachments/300380/untitled_3_CWUWIRJim0.jpeg?auto=compress%2Cformat&w=680&h=510&fit=max" class="img-circle" alt="Cinque Terre" width="220" height="220" style="margin-left: 12%;"> 
+                         <img src="<?php echo $data[3][3];?>" class="img-circle" alt="Cinque Terre" width="220" height="220" style="margin-left: 12%;"> 
             </div>
           </div>
           <hr style="border-style: dashed;">
@@ -389,11 +414,11 @@ Use Intel hardware and submit projects that have impact in these areas:<br>
     </div>
    <div class="row">
       <div class="col-sm-8" >
-             <h1>Prof. Dhananjay Gadre</h1>
-             <h2>Director,CEDT</h2>
+             <h1><?php echo $data[12][0];?></h1>
+             <h2><?php echo $data[12][1];?></h2>
              <div class="row">
                 <div class="col-sm-12" style="padding-left: 20%;">
-                    <h4>Dhananjay V. Gadre (New Delhi, India) completed his MSc (electronic science) from the University of Delhi and M.Engr (computer engineering) from the University of Idaho, USA. In his professional career of 25 years, he has taught at the SGTB Khalsa College, University of Delhi, worked as a scientific officer at the Inter University Centre for Astronomy and Astrophysics (IUCAA), Pune, and since 2001, has been with the Electronics and Communication Engineering Division, Netaji Subhas Institute of Technology, New Delhi, currently as an associate professor.  <a href="#">Read More </a></h4>
+                    <h4><?php echo $data[12][2];?>  <a href="#">Read More </a></h4>
                 </div>
              </div>
       </div>
