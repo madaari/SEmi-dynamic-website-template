@@ -280,7 +280,7 @@
              </div>
       </div>
       <div class="col-sm-4" >
-             <img src="https://i1.wp.com/cepd.in/images/gadresir.jpg?resize=250%2C250" class="img-circle" alt="Cinque Terre" width="250" height="250" style="margin-left: 10%;"> 
+             <img src="http://via.placeholder.com/250X250" class="img-circle" alt="Cinque Terre" width="250" height="250" style="margin-left: 10%;"> 
       </div>
   </div>
   <div class="centerify" style="color: green;font-size: 4em;font-family: 'Vollkorn', serif;text-align: center;">~~~</div>
