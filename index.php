@@ -1,6 +1,6 @@
 
 <?php
-  $url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQWvKmJQrt3-DpE5-8b8zu9rXe4DF7DpTq8JMUYQAukLDR_hwAKGpJK9sUMB62CvXXk7N4hIc9MJGya/pub?gid=0&single=true&output=csv";
+  $url = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQl_n_7oGYetK_tWVbAsdli9gr3nfMwUKiNCisqny4lYqgLsKNmfdBM790LPqNYwmwnI8yvJW-IUPzB/pub?gid=0&single=true&output=csv";
   
   $data = get_csv_content($url);
   
@@ -104,9 +104,9 @@
 			</div>
 			<!-- Division 1.2 HEADER-->
 			<div id="div1-2" class="col-xs-9" style="text-align:center;">
-				<h1 style="position: relative ;margin-top: 1%;font-weight: bold;">Centre for Electronic Design and Technology</h1>
-				<h2 style="position: relative ;margin-top: 1%;">Block 4, Netaji Subash Institute of Technology</h2>
-				<h2 style="position: relative ;margin-top: 1%;margin-bottom: 0.5%;">Dwarka, New Delhi</h2>
+				<h1 style="position: relative ;margin-top: 1%;font-weight: bold;">Title of webpage</h1>
+				<h2 style="position: relative ;margin-top: 1%;">Sub heading</h2>
+				<h2 style="position: relative ;margin-top: 1%;margin-bottom: 0.5%;">Place</h2>
 			</div>
 			<div id="div1-3" class="col-xs-1" >
 				<br>
@@ -316,8 +316,8 @@
         <div class="container">
                 <nav class="navbar" style="background:transparent; color: black;">
                       <div class="row">
-                        <div class="col-xs-8 h6"> <h1 style="color: whitesmoke;opacity: 0.6;margin-top: 0px;">CEDT</h1> </div>
-                        <div class="col-xs-4"><h2 style="color: whitesmoke;opacity:0.6;margin-top:10px">© 2017 cedtnsit.in</h2></div>
+                        <div class="col-xs-8 h6"> <h1 style="color: whitesmoke;opacity: 0.6;margin-top: 0px;">NAME</h1> </div>
+                        <div class="col-xs-4"><h2 style="color: whitesmoke;opacity:0.6;margin-top:10px">© 2017 corp.in</h2></div>
                       </div>
                       
                 </nav>
