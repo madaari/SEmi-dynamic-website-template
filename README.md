@@ -1,6 +1,6 @@
 # Home Page
 ## Desired Layout
-  ![Initial layout](https://github.com/madaari/cedtnsit.in/blob/master/index.jpeg)
+  
 ## Milestones
 
   ### Frontend<br>
